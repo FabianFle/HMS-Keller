@@ -1,0 +1,76 @@
+.footerDiv {
+  position: relative;
+  z-index: 2;
+  height: 250px;
+  width: 100vw;
+  max-width: 100%;
+  background-image: url("/assets/img/backgroundFooter.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  box-shadow: 0px -3px 3px 1px black;
+}
+
+.footerImpressum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+
+  a {
+    text-decoration: none;
+    span {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px;
+      transition: all 125ms ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: gray;
+      }
+    }
+  }
+}
+
+.footerCopyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: white;
+  }
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    img {
+      object-fit: cover;
+      height: 40px;
+      margin: 10px;
+      transition: all 125ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.footerLogoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.footerLogo {
+  border-radius: 5px;
+  object-fit: cover;
+  height: 82px;
+}

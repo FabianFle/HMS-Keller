@@ -1,0 +1,41 @@
+<div class="headerDiv">
+
+    <div>
+        <a routerLink="/"><img src="assets/img/logo-hms-background.png" class="headerLogo"></a>
+    </div>
+
+    <div class="headerMenu">
+        <a routerLink="/home">
+            <span class="headerMenuSpan">Home</span>
+        </a>
+        <a routerLink="/leistungen">
+            <span class="headerMenuSpan">Leistungen</span>
+        </a>
+        <a routerLink="/galerie">
+            <span class="headerMenuSpan">Galerie</span>
+        </a>
+        <a routerLink="/kontakt">
+            <span class="headerMenuSpan">Kontakt</span>
+        </a>
+    </div>
+
+    <div class="menuBtnMobile" (click)="toggleMenu()">
+        <img src="assets/img/icon/menuBtn.png">
+    </div>
+
+    <div class="headerMenuMobile" #mobileMenu [class.d-none]="!isMenuOpen">
+        <a routerLink="/home">
+            <span class="mobileMenu" (click)="closeMenu()">Home</span>
+        </a>
+        <a routerLink="/leistungen">
+            <span class="mobileMenu" (click)="closeMenu()">Leistungen</span>
+        </a>
+        <a routerLink="/galerie">
+            <span class="mobileMenu" (click)="closeMenu()">Galerie</span>
+        </a>
+        <a routerLink="/kontakt">
+            <span class="mobileMenu" (click)="closeMenu()">Kontakt</span>
+        </a>
+    </div>
+
+</div>

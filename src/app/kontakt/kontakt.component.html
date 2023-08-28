@@ -1,0 +1,60 @@
+<div class="contaktDiv">
+    <div class="contaktMe">
+        <h1>
+            Ihr Kontakt zu uns
+        </h1>
+
+        <span class="contactText">
+            Haben Sie Fragen zu unseren zu unseren Dienstleistungen? Unser kompetentes Team ist gerne für Sie da. Füllen
+            Sie einfach das Kontaktformular aus oder rufen Sie uns unter <b>0151/43117127</b> an, und wir setzen uns zeitnah
+            mit Ihnen in Verbindung.
+            – wir freuen uns auf Sie!
+        </span>
+
+        <div>
+            <h2>Hier finden Sie uns:</h2>
+            <span class="contactAdresse">
+                HMS-Keller <br>
+                Hörgessing 3 <br>
+                94474 Vilshofen an der Donau, <br><br>
+                Tel: 0151/43117127 <br>
+                E-mail: info@hms-keller.com
+            </span>
+            <div class="googleMaps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164.9478822947657!2d13.157765893162022!3d48.587518102515354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477455c48da8a7c3%3A0xcd14d27facf5bd43!2sHMS-Keller!5e0!3m2!1sde!2sde!4v1692442618757!5m2!1sde!2sde"
+                    class="iframeMaps" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+    <div class="contaktFormular">
+        <h2 class="h2-1">
+            Ihre Nachricht an uns:
+        </h2>
+
+        <form (submit)="sendMail()" method="POST" class="formInput" ngNativeValidate #myForm>
+            <input id="name" required type="text" placeholder="Vor- & Nachname" #nameField data-aos="zoom-in-up">
+            <input id="mail" required type="email" placeholder="Email" #emailField data-aos="zoom-in-up">
+            <input id="phone" required type="tel" placeholder="Telefon Nummer" #phoneField data-aos="zoom-in-up">
+            <textarea id="message" required cols="30" rows="10" placeholder="Nachricht" #messageField
+                data-aos="zoom-in-up"></textarea>
+            <div class="sendBtnAndEmailSend" data-aos="zoom-in-up">
+                <button disabled id="sendBtn" class="sendMessageBtn" #sendButton translate>Abschicken :)</button>
+                <div id="loader" class="loaderDNone">
+                    <div class="loader">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
+                        <div class="line line4"></div>
+                        <div class="line line5"></div>
+                    </div>
+                </div>
+                <div class="emailSend loaderDNone" id="sendEmail" translate>E-Mail has been sent.</div>
+            </div>
+        </form>
+
+    </div>
+</div>

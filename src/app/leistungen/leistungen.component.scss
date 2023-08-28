@@ -1,0 +1,46 @@
+.leistungenDiv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.leistungenTableDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 20px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+
+  span {
+    text-align: center;
+    margin: 5px;
+  }
+
+  a {
+    text-align: center;
+    transition: all 125ms ease-in-out;
+    &:hover {
+     transform: scale(1.1);   
+    }
+  }
+}
+
+.tableText {
+    font-size: 18px;
+}
+
+.lastText {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}

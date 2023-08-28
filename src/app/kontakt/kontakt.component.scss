@@ -1,0 +1,286 @@
+.contaktDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sendMessageBtn {
+    background-color: gray !important;
+
+    &:hover {
+        transform: scale(1) !important; 
+        border: none !important;
+        box-shadow: 0 0 5px #00652b !important;
+    }
+}
+
+.contaktMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.h2-1 {
+    font-size: 30px;
+}
+
+.contactAdresse {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contactText {
+    max-width: 700px;
+}
+
+.googleMaps {
+    margin-top: 20px;
+
+    .iframeMaps {
+        height: 250px;
+        width: 450px;
+    }
+
+    iframe {
+        border-radius: 10px;
+        border: 2px solid #00652b;
+    }
+}
+
+.contaktFormular {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    input {
+        background-color: transparent;
+        border: 1px solid #00652b;
+        box-shadow: 0 0 5px #00652b;
+        border-radius: 10px;
+        width: 400px;
+        height: 10px;
+        padding: 15px 25px;
+        margin-bottom: 30px;
+        transition: all 125ms ease-in-out;
+        color: white;
+        outline: none;
+
+        &::placeholder {
+            color: white;
+            font-family: 'arial';
+        }
+
+        &:hover {
+            border: 1px solid #00e663;
+            box-shadow: 0 0 5px #00e663;
+        }
+    }
+
+    textarea {
+        background-color: transparent;
+        color: white;
+        border: 1px solid #00652b;
+        box-shadow: 0 0 5px #00652b;
+        border-radius: 10px;
+        width: 400px;
+        height: 100px;
+        padding: 15px 25px;
+        margin-bottom: 30px;
+        transition: all 125ms ease-in-out;
+        outline: none;
+
+        &::placeholder {
+            color: white;
+            font-family: 'arial';
+        }
+
+        &:hover {
+            border: 1px solid #00e663;
+            box-shadow: 0 0 5px #00e663;
+        }
+    }
+}
+
+.sendMessageBtn {
+    background: #00652b;
+    box-shadow: 0 0 5px #00652b;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 120%;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        background-color: #00e663;
+        box-shadow: 0 0 5px #00e663;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.inputIsEmpty {
+    border: 1px solid red;
+}
+
+.loaderDNone {
+    display: none;
+}
+
+.sendBtnAndEmailSend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailSend {
+    margin-top: 10px;
+    color: white;
+}
+
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+}
+
+.line {
+    height: 100%;
+    width: 4px;
+    margin-right: 2px;
+    animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.line1 {
+    animation-delay: -0.16s;
+    background-color: #00652b;
+}
+
+.line2 {
+    animation-delay: -0.32s;
+    background-color: #00e663;
+}
+
+.line3 {
+    animation-delay: -0.48s;
+    background-color: #00652b;
+}
+
+.line4 {
+    animation-delay: -0.64s;
+    background-color: #00e663;
+}
+
+.line5 {
+    animation-delay: -0.8s;
+    background-color: #00652b;
+}
+
+@keyframes loader {
+    0% {
+        transform: scaleY(0.1);
+    }
+
+    50% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0.1);
+    }
+}
+
+// ===========================
+// ===== - 27-30 zoll - ======
+// ===========================
+
+
+@media (min-width: 2000px) {
+
+    .formInput {
+        input {
+            width: 1000px;
+            height: 100px;
+            font-size: 25px;
+            border-radius: 20px;
+        }
+
+        textarea {
+            width: 1000px;
+            height: 350px;
+            font-size: 25px;
+            border-radius: 20px;
+        }
+    }
+
+    .contactHeadlin {
+        h1 {
+            font-size: 160px;
+        }
+    }
+
+    .contactInfos {
+        max-width: none;
+    }
+
+    .infoSpan {
+        font-size: 30px;
+    }
+
+    .headInfosSpan {
+        font-size: 70px;
+    }
+
+    .sendMessageBtn {
+        width: 400px;
+        height: 130px;
+        font-size: 40px;
+        border-radius: 20px;
+    }
+}
+
+
+// ===========================
+// ======== - Media - ========
+// ===========================
+
+@media (max-width: 480px) {
+    .googleMaps {
+        iframe {
+            width: 300px;
+        }
+    }
+
+    .formInput {
+        input {
+            width: 250px;
+        }
+
+        textarea {
+            width: 250px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<div class="galerieDiv">
+    <div class="machinenDiv">
+        <h1>Unsere Ausrüstung / Machinenpark</h1>
+        <div class="imgWerkeMachinenDiv">
+            <img (click)="openImage(machine)" *ngFor="let machine of Machienen"
+                src="assets/img/Machinen/{{machine}}.jpg">
+        </div>
+    </div>
+
+    <div class="werkeDiv">
+        <h1>Unsere Arbeit</h1>
+        <div class="imgWerkeMachinenDiv">
+            <img (click)="openImage(work)" *ngFor="let work of Werke" src="assets/img/Werke/{{work}}.jpg">
+        </div>
+    </div>
+</div>
+
+<div (click)="closeImage()" class="overlay" *ngIf="showImage">
+    <div class="close-button" (click)="closeImage()">X</div>
+    <img src="assets/img/Machinen/{{selectedImage}}.jpg">
+</div>

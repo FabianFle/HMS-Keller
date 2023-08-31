@@ -32,14 +32,15 @@
     </div>
     <div class="contaktFormular">
         <h2 class="h2-1">
-            Ihre Nachricht an uns:
+            Ihre Nachricht an uns: <br>
+            ! Aktuell noch außer Funktion !
         </h2>
 
         <form (submit)="sendMail()" method="POST" class="formInput" ngNativeValidate #myForm>
-            <input id="name" required type="text" placeholder="Vor- & Nachname" #nameField data-aos="zoom-in-up">
-            <input id="mail" required type="email" placeholder="Email" #emailField data-aos="zoom-in-up">
-            <input id="phone" required type="tel" placeholder="Telefon Nummer" #phoneField data-aos="zoom-in-up">
-            <textarea id="message" required cols="30" rows="10" placeholder="Nachricht" #messageField
+            <input disabled id="name" required type="text" placeholder="Vor- & Nachname" #nameField data-aos="zoom-in-up">
+            <input disabled id="mail" required type="email" placeholder="Email" #emailField data-aos="zoom-in-up">
+            <input disabled id="phone" required type="tel" placeholder="Telefon Nummer" #phoneField data-aos="zoom-in-up">
+            <textarea disabled id="message" required cols="30" rows="10" placeholder="Nachricht" #messageField
                 data-aos="zoom-in-up"></textarea>
             <div class="sendBtnAndEmailSend" data-aos="zoom-in-up">
                 <button disabled id="sendBtn" class="sendMessageBtn" #sendButton translate>Abschicken :)</button>

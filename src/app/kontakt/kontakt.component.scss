@@ -16,6 +16,22 @@
     }
 }
 
+.formInput {
+    input {
+        &:hover {
+            border: 1px solid #00652b !important;
+            box-shadow: 0 0 5px #00652b !important;
+        }
+    }
+
+    textarea {
+        &:hover {
+            border: 1px solid #00652b !important;
+            box-shadow: 0 0 5px #00652b !important;
+        }
+    }
+}
+
 .contaktMe {
     display: flex;
     flex-direction: column;
@@ -27,6 +43,7 @@
 
 .h2-1 {
     font-size: 30px;
+    text-align: center;
 }
 
 .contactAdresse {
@@ -36,6 +53,8 @@
 
 .contactText {
     max-width: 700px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .googleMaps {
@@ -269,8 +288,8 @@
 
 @media (max-width: 480px) {
     .googleMaps {
-        iframe {
-            width: 300px;
+        .iframeMaps {
+            width: 250px;
         }
     }
 

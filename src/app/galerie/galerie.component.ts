@@ -11,15 +11,18 @@ export class GalerieComponent {
   
   showImage = false;
   selectedImage: string | undefined;
+  imageType: string | undefined;
 
-  openImage(image: string) {
+  openImage(image: string, type: string) {
     this.selectedImage = image;
+    this.imageType = type;
     this.showImage = true;
   }
 
   closeImage() {
     this.showImage = false;
     this.selectedImage = undefined;
+    this.imageType = undefined;
   }
 
   ngOnInit() {

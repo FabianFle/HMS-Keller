@@ -1,7 +1,7 @@
 <div class="headerDiv">
 
     <div>
-        <a routerLink="/"><img src="assets/img/logo-hms-background.png" class="headerLogo"></a>
+        <a routerLink="/"><img src="assets/img/icon/Logo.png" class="headerLogo"></a>
     </div>
 
     <div class="headerMenu">
@@ -20,7 +20,9 @@
     </div>
 
     <div class="menuBtnMobile" (click)="toggleMenu()">
-        <img src="assets/img/icon/menuBtn.png">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
 
     <div class="headerMenuMobile" #mobileMenu [class.d-none]="!isMenuOpen">

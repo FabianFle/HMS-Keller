@@ -1,27 +1,38 @@
-import { Component, ElementRef, ViewChild} from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-
   @ViewChild('mobileMenu') mobileMenu!: ElementRef;
 
   isMenuOpen: boolean = false;
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+    const menuBtn = document.querySelector('.menuBtnMobile');
+    const mobileMenuDiv = this.mobileMenu.nativeElement;
+
     if (this.isMenuOpen) {
-      this.mobileMenu.nativeElement.classList.remove('d-none');
+      menuBtn?.classList.add('open');
+      mobileMenuDiv.classList.add('open'); // Fügen Sie die .open Klasse zum Menü hinzu
+      mobileMenuDiv.classList.remove('d-none');
     } else {
-      this.mobileMenu.nativeElement.classList.add('d-none');
+      menuBtn?.classList.remove('open');
+      mobileMenuDiv.classList.remove('open'); // Entfernen Sie die .open Klasse vom Menü
+      mobileMenuDiv.classList.add('d-none');
     }
   }
 
   closeMenu() {
+    const menuBtn = document.querySelector('.menuBtnMobile');
+    const mobileMenuDiv = this.mobileMenu.nativeElement;
+
+    menuBtn?.classList.remove('open');
+    mobileMenuDiv.classList.remove('open'); // Entfernen Sie die .open Klasse vom Menü
     this.isMenuOpen = false;
-    this.mobileMenu.nativeElement.classList.add('d-none');
+    mobileMenuDiv.classList.add('d-none');
   }
 }

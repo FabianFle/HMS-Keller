@@ -35,7 +35,7 @@ export class KontaktComponent {
     fd.append('emailField', emailField.value);
     fd.append('messageField', messageField.value);
     fd.append('phoneField', phoneField.value);
-    await fetch('https://www.fabianflegler.de/send_mail.php', {
+    await fetch('assets/send_mail.php', {
       method: 'POST',
       body: fd,
     });

@@ -1,6 +1,6 @@
 <?php
 
-$recipient = 'fabianflegler@mail.de';
+$recipient = 'fabianflegler1@yahoo.de';
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
@@ -9,9 +9,10 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case ("POST"): //Send the email;
 
         $subject = "Von: " . $_POST['nameField'];
-        $headers = "From: ". $_POST['emailField'] ;
+        $headers = "E-Mail: ". $_POST['emailField'];
+        $headers2 = "Telefon Nummer: ". $_POST['phoneField'];
 
-        mail($recipient, $subject, $_POST['messageField'], $headers);
+        mail($recipient, $subject, $headers, $headers2, $_POST['messageField']);
         break;
     default: //Reject any non POST or OPTIONS requests.
         header("Allow: POST", true, 405);

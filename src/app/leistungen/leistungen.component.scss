@@ -3,11 +3,15 @@
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+  background-image: url("/assets/img/HomeScreenImg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-    text-align: center;
-    text-decoration: underline;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .leistungenTableDiv {
@@ -20,6 +24,8 @@ h1 {
   border: 2px solid;
   border-radius: 10px;
   padding: 10px;
+  background-color: #b4b4b4;
+  text-align: center;
 
   span {
     text-align: center;
@@ -30,17 +36,17 @@ h1 {
     text-align: center;
     transition: all 125ms ease-in-out;
     &:hover {
-     transform: scale(1.1);   
+      transform: scale(1.1);
     }
   }
 }
 
 .tableText {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .lastText {
-    font-weight: bold;
-    text-decoration: underline;
-    color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
 }

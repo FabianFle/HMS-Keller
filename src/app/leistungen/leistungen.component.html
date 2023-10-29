@@ -4,7 +4,6 @@
         <h1>Hausmeisterservice</h1>
         <span class="tableText" *ngFor="let tableOne of table1; let i = index">{{tableOne}}</span>
         <a routerLink="/kontakt"><span class="lastText" *ngFor="let last of lastText; let i = index">{{last}}</span></a>
-
     </div>
 
 
@@ -12,15 +11,13 @@
         <h1>Garten-Landschaftsbau / Pflege</h1>
         <span class="tableText" *ngFor="let tableTwo of table2; let i = index">{{tableTwo}}</span>
         <a routerLink="/kontakt"><span class="lastText" *ngFor="let last of lastText; let i = index">{{last}}</span></a>
-
     </div>
 
 
     <div class="leistungenTableDiv">
         <h1>Reinigung</h1>
-        <span class="v" *ngFor="let tableThree of table3; let i = index">{{tableThree}}</span>
+        <span class="tableText" *ngFor="let tableThree of table3; let i = index">{{tableThree}}</span>
         <a routerLink="/kontakt"><span class="lastText" *ngFor="let last of lastText; let i = index">{{last}}</span></a>
-
     </div>
 
 
@@ -28,8 +25,6 @@
         <h1>Winterdienst</h1>
         <span class="tableText" *ngFor="let tableFour of table4; let i = index">{{tableFour}}</span>
         <a routerLink="/kontakt"><span class="lastText" *ngFor="let last of lastText; let i = index">{{last}}</span></a>
-
     </div>
-
 
 </div>

@@ -1,9 +1,7 @@
 <div class="headerDiv">
-
     <div>
         <a routerLink="/"><img src="assets/img/icon/Logo.png" class="headerLogo"></a>
     </div>
-
     <div class="headerMenu">
         <a routerLink="/home">
             <span class="headerMenuSpan">Home</span>
@@ -18,14 +16,12 @@
             <span class="headerMenuSpan">Kontakt</span>
         </a>
     </div>
-
     <div class="menuBtnMobile" (click)="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
-
-    <div class="headerMenuMobile" #mobileMenu [class.d-none]="!isMenuOpen">
+    <div class="headerMenuMobile" [ngClass]="{ 'open': isMenuOpen }">
         <a routerLink="/home">
             <span class="mobileMenu" (click)="closeMenu()">Home</span>
         </a>
@@ -39,5 +35,4 @@
             <span class="mobileMenu" (click)="closeMenu()">Kontakt</span>
         </a>
     </div>
-
 </div>

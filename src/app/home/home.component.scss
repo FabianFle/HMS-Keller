@@ -4,7 +4,8 @@
   max-width: 100%;
   background-image: url("/assets/img/home-background.png");
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -16,7 +17,8 @@
   max-width: 100%;
   background-image: url("/assets/img/HomeScreenImg.png");
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,20 +30,16 @@ h1 {
   font-size: 100px;
   color: #b4b4b4;
   margin: 0;
-  text-shadow: 2px 2px 2px black,
-  2px -2px 2px black,
-  -2px 2px 2px black,
-  -2px -2px 2px black;
+  text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black,
+    -2px -2px 2px black;
 }
 
 h2 {
   font-size: 39px;
   color: #b4b4b4;
   margin: 0;
-  text-shadow: 2px 2px 2px black,
-  2px -2px 2px black,
-  -2px 2px 2px black,
-  -2px -2px 2px black;
+  text-shadow: 2px 2px 2px black, 2px -2px 2px black, -2px 2px 2px black,
+    -2px -2px 2px black;
 }
 
 .h1-h2-homeDiv {
